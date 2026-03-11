@@ -13,11 +13,13 @@
         android:theme="@style/Theme.DiProject"
         tools:targetApi="31">
         <activity
+            android:name=".activity.FormActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.HomeActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.DiProject"
-            >
+            android:theme="@style/Theme.DiProject">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,10 +28,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            >
-        </activity>
-
+            android:exported="true"></activity>
 
         <service
             android:name=".service.com.me.feature_audio.AudioMonitorService"

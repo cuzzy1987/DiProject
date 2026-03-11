@@ -3,7 +3,11 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+
+
 android {
+    compileSdk = 35
+    namespace = "audio"
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -13,6 +17,12 @@ android {
         jvmTarget = "11"
     }
 
+    defaultConfig {
+        minSdk = 24
+        targetSdk = 35
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
 }
 dependencies {
     implementation(libs.androidx.appcompat)

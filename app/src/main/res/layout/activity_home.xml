@@ -8,6 +8,22 @@
     tools:context=".activity.HomeActivity">
 
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/loginTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:background="#AABBCC"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="7dp"
+        app:layout_constraintCircleRadius="10dp"
+        />
 
 
 
